@@ -1,59 +1,50 @@
-#app {
-    height: 100vh;
+.menu-demo {
+    height: calc(100% - 26px);
+    /*height: 900px;*/
+    /*box-sizing: border-box;*/
+    /*width: 100%;*/
+    /*padding: 40px;*/
+    /*background-color: var(--color-neutral-2);*/
+}
+
+/*.menu-demo .arco-menu-inner {*/
+/*    overflow-y: auto;*/
+/*}*/
+.layout-basic-demo .arco-layout-header,
+.layout-basic-demo .arco-layout-footer,
+.layout-basic-demo .arco-layout-sider,
+.layout-basic-demo .arco-layout-sider-children,
+.layout-basic-demo .arco-layout-content {
+    color: var(--color-white);
     text-align: center;
+    font-stretch: condensed;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#logo {
-    display: block;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    padding: 10% 0 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-origin: content-box;
+/*.arco-layout-content {*/
+/*    height: 100%;*/
+/*}*/
+.layout-basic-demo .arco-layout-header,
+.layout-basic-demo .arco-layout-footer {
+    height: 64px;
+    background-color: var(--color-primary-light-4);
 }
 
-.result {
-    height: 20px;
-    line-height: 20px;
-    margin: 1.5rem auto;
+.layout-basic-demo .arco-layout-sider {
+    width: 206px;
+    background-color: var(--color-primary-light-3);
 }
 
-.input-box .btn {
-    width: 60px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 3px;
-    border: none;
-    margin: 0 0 0 20px;
-    padding: 0 8px;
-    cursor: pointer;
+.layout-basic-demo .arco-layout-content {
+    /*height: calc(100% - 268px);*/
+    height: 900px;
+    background-color: var(--color-neutral-2);
+    /*background-color: rgb(var(--arcoblue-6));*/
 }
 
-.input-box .btn:hover {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    color: #333333;
-}
-
-.input-box .input {
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 10px;
-    background-color: rgba(240, 240, 240, 1);
-    -webkit-font-smoothing: antialiased;
-}
-
-.input-box .input:hover {
-    border: none;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.input-box .input:focus {
-    border: none;
-    background-color: rgba(255, 255, 255, 1);
+body{
+    height: 100%;
 }
